@@ -1,4 +1,6 @@
-dockerfiles
+This is my own set of Dockerfiles
 ===========
 
-Docker files for different apps
+Here you will find Dockerfiles to build apps like
+
+* apache-perl / embperl / sarge
