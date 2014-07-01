@@ -4,7 +4,7 @@ FROM ubuntu:trusty
 
 RUN [ "apt-get", "-qqy", "update"]
 RUN [ "apt-get", "-qqy", "dist-upgrade" ]
-RUN [ "apt-get", "-qqy", "install", "build-essentials", "git" ]
+RUN [ "apt-get", "-qqy", "install", "build-essential", "git" ]
 # Here we install the build dependencies for both languages 1.9 and 2
 RUN [ "apt-get", "-qqy", "build-dep", "ruby1.9.1" ]
 RUN [ "apt-get", "-qqy", "build-dep", "ruby1.9.3" ]
