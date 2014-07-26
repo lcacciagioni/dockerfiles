@@ -7,5 +7,5 @@ RUN apt-get -qqy update
 
 # Here we will try to install all the dependencies that came with the system
 
-RUN apt-get -qqy install curl
+RUN apt-get -qqy install curl sudo
 RUN curl -s -k -B https://raw.githubusercontent.com/yudai/cf_nise_installer/${INSTALLER_BRANCH:-master}/scripts/bootstrap.sh | bash
