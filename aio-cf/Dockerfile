@@ -1,4 +1,4 @@
-FROM ubuntu:10.04
+FROM ubuntu:12.04
 MAINTAINER Leandro Cacciagioni <leandro.21.2008@gmail.com>
 
 # Here we will change from dash to bash for the default /bin/sh
