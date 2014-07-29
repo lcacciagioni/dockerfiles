@@ -8,6 +8,8 @@ ENV CF_RELEASE_BRANCH v176
 ENV NISE_IP_ADDRESS 192.168.55.55
 ENV NISE_DOMAIN 192.168.55.55.xip.io
 RUN apt-get -qqy update
+RUN mkdir -p /opt/installer
+WORKDIR /opt/installer
 
 # Here we will try to install all the dependencies that came with the system
 
