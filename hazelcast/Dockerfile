@@ -10,4 +10,5 @@ RUN unzip -qq hazelcast.zip && rm hazelcast.zip
 ADD hazelcast-conf.xml /opt/hazelcast/hazelcast-conf.xml
 ADD start.sh /opt/hazelcast/start.sh
 RUN chmod 755 /opt/hazelcast/start.sh
+EXPOSE 5701
 CMD /opt/hazelcast/start.sh
