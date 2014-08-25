@@ -6,10 +6,13 @@ Hazelcast is one of the leading Open Source In-Memory Data Grid. It can be used 
 ### Environment Variables
 This particular docker image has a couple of environment variables to make his configuration dynamic at startup.
 
-´MIN_HEAP´: This variable is to set the initial mem of the java HEAP. (Default: 1G)
-´MAX_HEAP´: This variable is to set the maximum mem of the java HEAP. (Default: 1G)
-´GROUP_NAME´: This is to set the group name for the hazelcast cluster. (Default: dev)
-´GROUP_PASS´: This variable sets the password for the group of the hazelcast cluster. (Default: devpass)
+`MIN_HEAP`: This variable is to set the initial mem of the java HEAP. (Default: 1G)
+
+`MAX_HEAP`: This variable is to set the maximum mem of the java HEAP. (Default: 1G)
+
+`GROUP_NAME`: This is to set the group name for the hazelcast cluster. (Default: dev)
+
+`GROUP_PASS`: This variable sets the password for the group of the hazelcast cluster. (Default: devpass)
 
 ### How to run
 This docker image has multicast enabled on port 54327 and services enabled on port 5701 without port auto increment
