@@ -11,7 +11,7 @@ ADD hazelcast-conf.xml /opt/hazelcast/hazelcast-conf.xml
 ADD start.sh /opt/hazelcast/start.sh
 RUN chmod 755 /opt/hazelcast/start.sh
 RUN javac -cp "hazelcast-3.2.5.jar" Start.java
-RUN apt-get --purge autoremove openjdk-7-jdk
+RUN apt-get --purge -qqy autoremove openjdk-7-jdk
 RUN apt-get clean
 EXPOSE 5701
 CMD /opt/hazelcast/start.sh
